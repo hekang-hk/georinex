@@ -258,6 +258,7 @@ def _skip(f: T.TextIO, Nl: int):
 def navtime2(fn: T.TextIO | Path):
     """
     read all times in RINEX 2 NAV file
+    这个函数   navtime2   的作用是从 RINEX 2 版本的导航文件（NAV 文件）中读取所有时间戳，并返回一个去重后的时间数组。
     """
     times = []
     with opener(fn) as f:
